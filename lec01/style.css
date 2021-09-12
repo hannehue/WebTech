@@ -1,9 +1,10 @@
 body {
     margin: 5vw;
-    background-color:darkgray;
+    background-color: lightslategrey;
 }
 
-
+.text-input{
+}
 
 .flex-div {
     display: flex;
@@ -14,4 +15,12 @@ body {
 .form-flex {
     display: flex;
     flex-direction: column;
+}
+
+input {
+    margin: 5px 0px 5px 0px;
+}
+
+label {
+    margin-top: 20px;
 }
