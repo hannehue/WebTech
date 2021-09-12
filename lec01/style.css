@@ -1,0 +1,17 @@
+body {
+    margin: 5vw;
+    background-color:darkgray;
+}
+
+
+
+.flex-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+}
