@@ -3,9 +3,6 @@ body {
     background-color: lightslategrey;
 }
 
-.text-input{
-}
-
 .flex-div {
     display: flex;
     flex-direction: column;
