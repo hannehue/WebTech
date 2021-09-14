@@ -13,16 +13,12 @@
 <body>
     <div class="flex-div">
         <h1 class="heading">New Album</h1>
-        <form action="" class="form-flex">
+        <form action="/create.php" method="POST" class="form-flex">
             <label for="album-name">Name of the album</label><br>
             <input class="text-input" type="text" name="album-name" id="album-name"><br>
 
-
-
             <label for="album-release">Released on</label><br>
             <input type="number" name="album-release" id="album-release"><br>
-
-
 
             <label for="artist">Artist</label>
             <div>
@@ -62,28 +58,20 @@
                 <label for="single">Album</label>
             </div>
 
-
-
-
-
-
             <label for="album-description">Description:</label><br>
             <textarea name="album-description" id="album-description" cols="30" rows="10"></textarea><br>
 
-
-
-            <label for="songs">Songs:</label><br>
-            <input type="text" name="songs" id="song-1"><br>
-            <input type="text" name="songs" id="song-2"><br>
-            <input type="text" name="songs" id="song-3"><br>
-            <input type="text" name="songs" id="song-4"><br>
-            <input type="text" name="songs" id="song-5"><br>
-            <input type="text" name="songs" id="song-6"><br>
-            <input type="text" name="songs" id="song-7"><br>
-            <input type="text" name="songs" id="song-8"><br>
-            <input type="text" name="songs" id="song-9"><br>
-            <input type="text" name="songs" id="song-10"><br>
-
+            <label for="songs">Songs:</label>
+            <input type="text" name="songs" id="song-1">
+            <input type="text" name="songs" id="song-2">
+            <input type="text" name="songs" id="song-3">
+            <input type="text" name="songs" id="song-4">
+            <input type="text" name="songs" id="song-5">
+            <input type="text" name="songs" id="song-6">
+            <input type="text" name="songs" id="song-7">
+            <input type="text" name="songs" id="song-8">
+            <input type="text" name="songs" id="song-9">
+            <input type="text" name="songs" id="song-10">
 
             <input type="submit" value="Submit">
         </form>
