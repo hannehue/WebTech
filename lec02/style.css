@@ -28,11 +28,12 @@ ul{
 }
 
 li{
-    width: 100%;
     margin: 0px;
 }
 
+
 .song-input{
+    display: flex;
     width: 100%;
 }
 

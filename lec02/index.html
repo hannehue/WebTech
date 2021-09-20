@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script defer src="/lec02/node_modules/@fortawesome/fontawesome-free/css/all.css"></script>
+    <script defer src="/lec02/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="Web.js"></script>
 </head>
@@ -63,9 +65,9 @@
             <label for="songs">Songs:</label>
             <button type="button" class="new-song-btn" id="new-song-button">Add new song</button>
             <ul id="album-list">
-                <li><input class="song-input" type="text" name="songs" id="song-1"></li>
-                <li><input class="song-input" type="text" name="songs" id="song-2"></li>
-                <li><input class="song-input" type="text" name="songs" id="song-3"></li>
+                <li class="song-input"><input type="text" name="songs"><button><i class="fas fa-trash"></i></button></li>
+                <li><input class="song-input" type="text" name="songs"></li>
+                <li><input class="song-input" type="text" name="songs"></li>
             </ul>
 
             <input type="submit" value="Submit">
