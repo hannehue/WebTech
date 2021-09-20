@@ -31,11 +31,22 @@ li{
     margin: 0px;
 }
 
+.song-input-item{
+    align-items: center;
+    display: flex;
+}
+
+.delete-song-btn{
+    margin-left: 5px;
+    height: 30px;
+    border: 0px;
+}
 
 .song-input{
-    display: flex;
     width: 100%;
 }
+
+
 
 .album-type-div{
     display: flex;
