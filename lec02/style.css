@@ -1,0 +1,42 @@
+body {
+    margin: 5vw;
+    background-color: lightslategrey;
+}
+
+.flex-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px 0px 5px 0px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+ul{
+    padding: 0px;
+    list-style-type: none;
+}
+
+li{
+    width: 100%;
+    margin: 0px;
+}
+
+.song-input{
+    width: 100%;
+}
+
+.album-type-div{
+    display: flex;
+    justify-content: space-between;
+}
