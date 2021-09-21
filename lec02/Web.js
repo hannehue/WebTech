@@ -15,7 +15,6 @@ $(document).on('click', '#new-song-button', function () {
     } else {
         $('#delete-song-button').prop('disabled', false);
     }
-
 });
 
 $(document).on('click', '#delete-song-button', function () {
@@ -25,3 +24,10 @@ $(document).on('click', '#delete-song-button', function () {
     $('#new-song-button').prop('disabled', false);
 });
 
+
+
+$('form').submit(function (e) { 
+    
+    e.preventDefault();
+
+});
