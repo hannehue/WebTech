@@ -1,16 +1,8 @@
 function triangle(x, provSign) {
-    let sign = "#";
-    if (provSign) {
-        sign = provSign
-    }
-
+    let sign = provSign ? provSign : "#"
+    let toPrint = sign;
     for (let i = 0; i < x; i++) {
-        let j = 0;
-        let s = "";
-        while (j <= i) {
-            s += sign;
-            j++;
-        }
-        console.log(s + "\n")
+        console.log(toPrint);
+        toPrint += sign;
     }
 }
