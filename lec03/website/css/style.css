@@ -18,39 +18,33 @@ input {
     margin: 5px 0px 5px 0px;
 }
 
-label {
-    margin-top: 20px;
-}
-
-ul{
-    padding: 0px;
-    list-style-type: none;
-}
-
-li{
-    margin: 0px;
-}
-
-.song-input-item{
-    align-items: center;
-    display: flex;
+.song-list{
+    grid-row-gap: 5px;
 }
 
 .delete-song-btn{
-    margin-left: 5px;
     height: 30px;
-    border: 0px;
+    align-self: center;
+    margin-left: 5px;
+    border: 0;
+}
+
+.album-type-div{
+    justify-content: space-between;
+}
+
+.song{
+    display: flex;
 }
 
 .song-input{
     width: 100%;
 }
 
-.album-type-div{
+.flex{
     display: flex;
-    justify-content: space-between;
 }
 
-button {
-    border-radius: 5px;
+.grid{
+    display: grid;
 }
