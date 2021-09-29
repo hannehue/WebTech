@@ -1,25 +1,20 @@
 body {
-    margin: 5vw;
+    padding: 50px;
     background-color: lightslategrey;
 }
 
-.flex-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+form{
+    width: 400px;
+    row-gap: 10px;
+    display: grid;
 }
 
-.form-flex {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    margin: 5px 0px 5px 0px;
+.cent{
+    justify-items: center;
 }
 
 .song-list{
-    grid-row-gap: 5px;
+    row-gap: 5px;
 }
 
 .delete-song-btn{
@@ -31,6 +26,10 @@ input {
 
 .album-type-div{
     justify-content: space-between;
+}
+
+.song-input-div{
+    row-gap: 5px;
 }
 
 .song{
