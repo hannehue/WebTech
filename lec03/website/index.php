@@ -11,7 +11,7 @@
 
     <div>
         <h2>Albums:</h2>
-        <div id="albums"></div>
+        <ul id="albums"></ul>
         <a href="./new-album.php"><button>Add new Album</button></a>
     </div>
 </body>
