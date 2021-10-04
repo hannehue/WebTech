@@ -21,15 +21,19 @@ function validateForm() {
             handleInvalidForm(input.parent(), formvalid);
         }
 
-        $("#song").each(function(){
-            let input = $(this);
-            console.log("yeet");
-            if (!input.val()){
-                handleInvalidForm(input, formvalid);
-            }
-        });
+        validateSongs(formvalid);
 
         return formvalid.valid;
+    });
+}
+
+function validateSongs(formvalid){
+    $(".song-input").each(function(){
+        let input = $(this);
+        console.log($(this).parent());
+        if (!input.val()){
+            handleInvalidForm(input, formvalid);
+        }
     });
 }
 

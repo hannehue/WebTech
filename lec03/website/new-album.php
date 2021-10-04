@@ -62,17 +62,17 @@
 
             <label for="album-description">Description:</label>
             <textarea name="album-description" id="album-description" cols="30" rows="10"></textarea>
-            <div class="grid song-input-div">
+            <div class="grid song-input-div input-div">
                 <label>Songs:</label>
                 <div class="song-list grid">
                     <div class="song">
-                        <input class="song-input" type="text" name="song">
+                        <input class="song-input" type="text" name="song[]">
                         <button type="button"class="delete-song-btn" disabled="disabled">
                             <i class="fas fa-trash"></i></button>
                     </div>
                 </div>
                 <button type="button" class="new-song-btn" id="new-song-button">Add new song</button>
-                <div class="invalid-input">Please enter atleast one song</div>
+                <div class="invalid-input">Please fill out all the fields</div>
             </div>
 
             <input type="submit" value="Submit">
