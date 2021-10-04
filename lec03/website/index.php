@@ -12,7 +12,7 @@
     <div>
         <h2>Albums:</h2>
         <div id="albums"></div>
-        <a href="./new-album.html"><button>Add new Album</button></a>
+        <a href="./new-album.php"><button>Add new Album</button></a>
     </div>
 </body>
 </html>

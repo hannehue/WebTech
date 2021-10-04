@@ -47,3 +47,8 @@ form{
 .grid{
     display: grid;
 }
+
+.invalid-input{
+    margin-top: 0px;
+    color: red;
+}
