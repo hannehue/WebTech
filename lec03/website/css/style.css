@@ -49,6 +49,7 @@ form{
 }
 
 .invalid-input{
+    display: none;
     margin-top: 0px;
     color: red;
 }

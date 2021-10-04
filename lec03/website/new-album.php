@@ -9,24 +9,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link href="/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"></script>
+    <link href="/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
     <script defer src="/fontawesome-free-5.15.4-web/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/Web.js"></script>
+    <script src="scripts/Validation.js"></script>
 </head>
 
 <body>
     <div class="grid cent">
         <h1 class="heading">New Album</h1>
-        <form action="/create.php" method="POST" class="">
+        <form action="create.php" method="POST">
 
-            <div class="grid">
+            <div class="grid input-div">
                 <label for="album-name">Name of the album</label>
                 <input class="text-input" type="text" name="album-name" id="album-name">
                 <div class="invalid-input">Please enter a name</div>
             </div>
 
-            <div class="grid">
+            <div class="grid input-div">
                 <label for="album-release">Released on</label>
                 <input type="number" name="album-release" id="album-release">
                 <div class="invalid-input">Please enter at valdi year</div>
@@ -40,11 +41,9 @@
                     <option value="<?php echo $key;?>"><?php echo $name; ?></option>
                 <?php endforeach; ?>
             </select>
-
-            
-            <div>
+            <div class="input-div">
                 <label for="album-type">Album type</label>
-                <div class="album-type-div flex">
+                <div class="album-type-div flex input-div">
                     <div>
                         <input type="radio" name="album-type" id="single">
                         <label for="single">Single</label>
