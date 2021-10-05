@@ -19,7 +19,7 @@
 <body>
     <div class="grid cent">
         <h1 class="heading">New Album</h1>
-        <form action="http://localhost:8000" method="POST">
+        <form action="create.php" method="POST">
 
             <div class="grid input-div">
                 <label for="name">Name of the album</label>
