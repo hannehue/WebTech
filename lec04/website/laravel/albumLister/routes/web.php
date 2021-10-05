@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/new-album.php', function () {
+    return view('new-album');
+});
+
+Route::get('/create.php', function () {
+    return view('create');
 });
