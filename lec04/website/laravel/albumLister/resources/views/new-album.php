@@ -8,19 +8,19 @@
     <title>New Album</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo asset("css/style.css")?>">
     <link href="/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
     <script defer src="/fontawesome-free-5.15.4-web/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts/Web.js"></script>
-    <script src="scripts/Validation.js"></script>
+    <script src="<?php echo asset("js/Web.js")?>"></script>
+    <script src="<?php echo asset("js/Validation.js")?>"></script>
 </head>
 
 <body>
     <div class="grid cent">
         <h1 class="heading">New Album</h1>
         <form action="create.php" method="POST">
-
+            <?php echo csrf_field(); ?>
             <div class="grid input-div">
                 <label for="name">Name of the album</label>
                 <input class="text-input" type="text" name="name" id="name">
@@ -43,17 +43,17 @@
             </select>
             <div class="input-div">
                 <label for="album-type">Album type</label>
-                <div id="" class="album-type-div flex input-div">
+                <div class="album-type-div flex input-div">
                     <div>
-                        <input type="radio" name="album-type" id="single">
+                        <input type="radio" name="album-type" id="single" value="single">
                         <label for="single">Single</label>
                     </div>
                     <div>
-                        <input type="radio" name="album-type" id="EP">
+                        <input type="radio" name="album-type" id="ep" value="ep">
                         <label for="single">EP</label>
                     </div>
                     <div>
-                        <input type="radio" name="album-type" id="Album">
+                        <input type="radio" name="album-type" id="Album" value="album">
                         <label for="single">Album</label>
                     </div>
                 </div>

@@ -18,9 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/new-album.php', function () {
+    $token = csrf_token();
+
     return view('new-album');
 });
 
-Route::get('/create.php', function () {
+Route::post('/create.php', function () {
     return view('create');
 });
