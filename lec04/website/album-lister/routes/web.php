@@ -17,12 +17,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/new-album.php', function () {
-    $token = csrf_token();
-
+Route::get('/new-album.php', function(){
     return view('new-album');
 });
 
-Route::post('/create.php', function () {
+Route::post('create.php', function () {
     return view('create');
 });

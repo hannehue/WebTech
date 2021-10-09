@@ -20,7 +20,7 @@
             <label>Artist: <?php echo $_POST['artist'] ?></label>
         </div>
         <div class="album-item">
-            <label>Type: <?php echo $_POST['album-type'] ?></label>
+            <label>Type of album: <?php echo $_POST['album-type'] ?></label>
         </div>
         <div class="album-item">
             <label>Album description: <?php echo $_POST['album-description'] ?></label>
