@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Album extends Model
 {
     use HasFactory;
+
+    protected $casts = ["songs" => "json"];
+
+    public function artist(){
+        return $this->belongsTo(Artist::class);
+    }
 }

@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Album</title>
-        <link href="<?php echo asset("fontawesome-free-5.15.4-web/js/all.css")?>" rel="stylesheet">
+        <link href="<?php
+
+use App\Models\Artist;
+
+echo asset("fontawesome-free-5.15.4-web/js/all.css")?>" rel="stylesheet">
         <script defer src="<?php echo asset("fontawesome-free-5.15.4-web/js/all.js")?>"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="<?php echo asset("js/Web.js")?>"></script>
@@ -17,7 +21,7 @@
 <body>
     <div class="grid cent">
         <h1 class="heading">New Album</h1>
-        <form action="create.php" method="POST">
+        <form action="<?php echo route("albums.new") ?>" method="POST">
             <?php echo csrf_field(); ?>
 
             <div class="grid input-div">
@@ -34,10 +38,9 @@
 
             <label for="artist">Artist:</label>
 
-            <?php $artists = ["martin_garrix" => "Martin Garrix", "san_holo" => "San Holo", "droeloe" => "Droeloe", "rl-grime" => "RL Grime", "tiesto" => "Tiësto"]  ?>
             <select name="artist" id="artist" class="">
-                <?php foreach($artists as $key => $name): ?>
-                    <option value="<?php echo $key;?>"><?php echo $name; ?></option>
+                <?php foreach($artists as $artist): ?>
+                    <option value="<?php echo $artist->id;?>"><?php echo $artist->name; ?></option>
                 <?php endforeach; ?>
             </select>
             <div class="input-div">
@@ -63,9 +66,9 @@
             <textarea name="album-description" id="album-description" cols="30" rows="10"></textarea>
             <div class="grid song-input-div input-div">
                 <label>Songs:</label>
-                <div class="song-list grid">
+                <div class="songs grid">
                     <div class="song">
-                        <input class="song-input" type="text" name="song[]">
+                        <input class="song-input" type="text" name="songs[]">
                         <button type="button"class="delete-song-btn" disabled="disabled">
                             <i class="fas fa-trash"></i></button>
                     </div>

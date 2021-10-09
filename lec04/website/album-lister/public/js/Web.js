@@ -7,7 +7,7 @@ function newSongEvent(){
     $(".new-song-btn").on("click", function() {
         let song = $(".song").first().clone();
         song.children("input").val("");
-        song.appendTo(".song-list");
+        song.appendTo(".songs");
 
         toggleDeleteButton();
     });
