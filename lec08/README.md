@@ -47,7 +47,7 @@ To do this, you will use the same hashing algorithms you are using, but you shou
 
 To create a salt, you can use the following function:
 
-    $salt = random_bytes($numberOfDesiredBytes);
+    $salt = bin2hex(random_bytes($numberOfDesiredBytes));
 
 Remember:
 
