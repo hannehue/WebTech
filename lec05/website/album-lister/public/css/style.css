@@ -1,0 +1,55 @@
+body {
+    padding: 50px;
+    background-color: lightslategrey;
+}
+
+form{
+    width: 400px;
+    row-gap: 10px;
+    display: grid;
+}
+
+.cent{
+    justify-items: center;
+}
+
+.songs{
+    row-gap: 5px;
+}
+
+.delete-song-btn{
+    height: 30px;
+    align-self: center;
+    margin-left: 5px;
+    border: 0;
+}
+
+.album-type-div{
+    justify-content: space-between;
+}
+
+.song-input-div{
+    row-gap: 5px;
+}
+
+.song{
+    display: flex;
+}
+
+.song-input{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.invalid-input{
+    display: none;
+    margin-top: 0px;
+    color: red;
+}
